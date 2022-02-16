@@ -1,0 +1,22 @@
+# Request
+
+# Should the frame be removed
+string command
+
+# Name of frame to add/attach to the scene
+string child_frame
+
+# Desired frame child_frame to be expressed in
+string parent_frame
+
+# frame_id expressed in parent_id
+geometry_msgs/Transform transform
+
+# If same_position is true, the position in world will be the same after attach and detach.
+# If it is true, the transform will be ignored.
+bool same_position_in_world
+
+---
+
+# Reply
+bool success
